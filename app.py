@@ -8,7 +8,7 @@ app = Flask(__name__)
 client = pymongo.MongoClient("mongodb+srv://m001-student:m001-mongodb-basics@sandbox.ymprapn.mongodb.net/test")
 db = client.flask
 logs = db.logins
-app.config['SECRET_KEY'] = 'thisisthesecret'
+app.config['SECRET_KEY'] = 'secretkeyofthecentury'
 
 def token_required(f):
     @wraps(f)
